@@ -1,0 +1,900 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1c8300;
+
+}
+
+.Logo {
+    width: 35%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+.Menus {
+    width: 60%;
+    height: fit-content;
+}
+
+.Menus ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.Menus ul li {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.links {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.MenuBtn {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(34deg, rgba(254, 254, 254, 0.9948354341736695) 0%, rgba(66, 184, 255, 0.5970763305322129) 73%);
+    background-image: url(/media/QuranAniBg.jpg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.Intro {
+    width: 40%;
+    height: 100vh;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.Intro button {
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem 0.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: none;
+    background-color: rgb(116, 112, 245);
+}
+
+.Intro a {
+    text-decoration: none;
+    color: white;
+}
+
+.playSystem {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+.play {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+}
+
+.pause {
+    width: 50px;
+    height: 50px;
+    background-image: url(/media/pauseBg.png);
+    background-size: contain;
+}
+
+.warpper {
+    width: 100%;
+    margin: auto;
+    border-bottom: 2px solid #000000;
+    overflow-x: hidden;
+}
+
+.Desc {
+    font-weight: bold;
+    color: #000000;
+    animation-name: rightToLeft;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation: rightToLeft 4.5s linear infinite;
+}
+
+@keyframes rightToLeft {
+    0% {
+        transform: translateX(380px);
+    }
+
+    100% {
+        transform: translateX(-340px);
+    }
+}
+
+.main-Div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1.5rem 0.1rem 1.5rem;
+}
+
+.div-container {
+    width: 100%;
+    height: 400px;
+    background-image: url(/media/Islamic-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.Search-div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.Search-div input {
+    width: 250px;
+    height: 40px;
+    opacity: 60%;
+    padding-left: 0.5rem;
+    border: none;
+}
+
+.Search-div button {
+    width: 110px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    background-color: #2d9a0f;
+    color: white;
+    cursor: pointer;
+}
+
+.Surat-Main-Div {
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(to right, #0d4602, #0fc100);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.8rem;
+    gap: 0.4rem;
+}
+
+.LibMenu {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px inset rgb(255, 255, 255);
+}
+
+.LibMenu ul {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.LibMenu ul li {
+    padding: 6px 0;
+}
+
+.LibMenu ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font-family: Lato, sans-serif;
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.LibMenu ul li a:hover {
+    color: #3aff68;
+}
+
+.LibMenu ul li a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.LibMenu ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.Surats {
+    width: 30%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.276);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    backdrop-filter: blur(19.7px);
+    -webkit-backdrop-filter: blur(19.7px);
+    /* box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.84); */
+}
+
+.suratTitel {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+
+}
+
+.suratTitel h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    text-align: center;
+    /* text-shadow: 3px 0px 7px rgba(255, 255, 255, 0.8), -3px 0px 7px rgba(255, 255, 255, 0.8), 0px 4px 7px rgba(255, 255, 255, 0.8); */
+}
+
+.suratTitel p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+}
+
+.suratImg {
+    width: 250px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.suratImg img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.84);
+    border-radius: 200px;
+}
+
+.controls {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* border: 1px solid black; */
+    gap: 2rem;
+}
+
+.play-Control {
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* border: 1px solid black; */
+}
+
+.play-Control img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.audio_function {
+    width: 25%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.volume_control {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.volume_img {
+    width: 30%;
+    height: 30px;
+}
+
+.volume_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 3px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="range"] ::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    cursor: pointer;
+    background-color: #1639ff;
+    border-radius: 50%;
+
+}
+.AboutContanier{
+    width: 100%;
+    height: fit-content;
+    padding: 5rem;
+    display: flex;
+    gap: 0.5rem;
+    
+}
+.AboutMain{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid rgba(0, 118, 16, 0.539);
+    padding: 1rem;
+}
+.aboutHeading{
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 84, 14);
+    padding: 1rem;
+}
+.AboutContent{
+    width: 100%;
+    padding: 1rem;
+}
+.AboutAudio{
+    width: 30%;
+    height: fit-content;
+    border: 2px solid rgba(0, 118, 16, 0.539);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+.Audios-Creator{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    gap: 0.5rem;
+    object-fit: cover;
+}
+.AboutAudio h3{
+    border-bottom: 2px solid rgb(4, 106, 1);
+}
+.Contact-Container{
+    width: 100%;
+    height: fit-content;
+    padding: 5rem;
+    display: flex;
+    gap: 1rem;
+}
+.Contact-Main{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 2px solid rgba(0, 118, 16, 0.539);
+    padding: 1rem;
+}
+.contactHeading{
+    width: 100%;
+    height: fit-content;
+    border-bottom: 2px solid rgb(123, 123, 123);
+    padding: 0.5rem;
+}
+.contactHeading h1{
+    padding-bottom: 0.4rem;
+}
+.Contact_box{
+    width: 100%;
+    height: fit-content;
+    /* border: 2px solid black; */
+    padding: 1rem;
+}
+.Contact_Input{
+    width: 90%;
+    height: 40px;
+}
+.Contact_box label{
+   letter-spacing: 1px;
+   font-weight: bold;
+}
+.Contact_box p{
+    padding-bottom: 1rem;
+}
+.Contact-btn{
+    background-color: #33673f;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+}
+.Addres-Info{
+    width: 25%;
+    height: fit-content;
+    border: 2px solid rgba(0, 118, 16, 0.539);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+    
+}
+.addres_box{
+    width: 100%;
+    height: 100px;
+    /* padding: 0rem 0rem 1rem 1rem; */
+    /* border: 2px solid rgba(0, 118, 16, 0.539);  */
+}
+.addres_box p{ 
+    
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    padding-bottom: 0.4rem; 
+    text-align: left;
+    /* border: 2px solid rgba(0, 118, 16, 0.539); */
+    
+}
+i .fa-solid .fa-location-dot{
+   cursor: pointer;
+}
+.addres_box li{
+   list-style: none;
+   
+   
+}
+
+/* Responsive */
+@media only screen and (max-width: 525px) {
+    .navbar {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #3bcb13;
+    }
+
+    .navbarMbl {
+        height: 230px;
+    }
+
+    .Logo {
+        width: 80%;
+        height: 40px;
+    }
+
+    .Menus {
+        display: none;
+    }
+
+    .MenusMbl {
+        width: 100%;
+        height: 180px;
+        display: flex;
+        justify-content: start;
+        padding-left: 0.5rem;
+        padding-top: 1rem;
+    }
+
+    .ul {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .li {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+
+    .links {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+
+    .MenuBtn {
+        width: 30px;
+        height: 30px;
+        display: flex;
+    }
+    .fa-solid{
+        color: white;
+    }
+    .container {
+        height: 400px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+       
+    }
+    .Intro {
+        width: 300px;
+        height: 200px;
+        font-size: 12px;
+        display: none;
+    }
+
+    .Intro button {
+        width: 100px;
+        padding: 0.6rem 0.4rem;
+        font-size: 12px;
+    }
+
+    .Intro a {
+        text-decoration: none;
+        color: white;
+        display: none;
+    }
+
+    Audio {
+        width: 200px;
+        height: 40px;
+        display: none;
+    }
+
+    .playSystem {
+        width: 250px;
+        height: 100px;
+        display: none;
+    }
+
+    .div-container {
+        width: 100%;
+        height: 200px;
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+
+    }
+
+    .Search-div {
+        width: 100%;
+        height: 40px;
+        gap: 0.5rem;
+
+    }
+
+    .Search-div input {
+        width: 140px;
+        height: 30px;
+    }
+
+    .Search-div button {
+        width: 60px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .Surat-Main-Div {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0.8rem;
+        gap: 0.4rem;
+    }
+
+    .LibMenu {
+        height: 2rem;
+    }
+
+    .LibMenu ul li a {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .Surats {
+        width: 90%;
+        height: 250px;
+    }
+
+    .suratTitel {
+        width: 100%;
+        height: 40px;
+    }
+
+    .suratTitel h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .suratTitel p {
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+
+    .suratImg {
+        width: 100px;
+        height: 120px;
+    }
+
+    .suratImg img {
+        width: 125px;
+        height: 125px;
+    }
+    .audio_function {
+        width: 25%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .volume_control {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .volume_img {
+        width: 30%;
+        height: 30px;
+    }
+    
+    .volume_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    input[type="range"] {
+        width: 100%;
+        height: 3px;
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    input[type="range"] ::-webkit-slider-thumb {
+        width: 20px;
+        height: 20px;
+        appearance: none;
+        cursor: pointer;
+        background-color: #1639ff;
+        border-radius: 50%;
+    
+    }
+    .AboutContanier{
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        
+    }
+    .AboutMain{
+        width: 100%;
+    }
+    .aboutHeading{
+        padding: 0.5rem;
+        width: 60%;
+    }
+    .aboutHeading h1{
+        font-size: 22px;
+    }
+    .AboutContent{
+        font-size: 14px;
+        padding: 0.6rem;
+    }
+    .AboutAudio{
+        width: 100%;
+        height: fit-content;
+        border: 2px solid rgba(0, 118, 16, 0.539);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+    .Audios-Creator{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        padding: 0.2rem;
+        gap: 0.5rem;
+        object-fit: cover;
+    }
+    .AboutAudio h3{
+        border-bottom: 2px solid rgb(4, 106, 1);
+    }
+    .Contact-Container{
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .Contact-Main{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        border: 2px solid rgba(0, 118, 16, 0.539);
+        padding: 1rem;
+    }
+    .contactHeading{
+        width: 100%;
+        height: fit-content;
+        border-bottom: 2px solid rgb(123, 123, 123);
+        padding: 0.5rem;
+    }
+    .contactHeading h1{
+        font-size: 22px;
+        padding-bottom: 0.4rem;
+    }
+    .contactHeading p{
+        font-size: 14px;
+    }
+    .Contact_box{
+        width: 100%;
+        height: fit-content;
+        padding: 0.5rem;
+    }
+    .Contact_Input{
+        width: 100%;
+        height: 40px;
+    }
+    .Contact_box label{
+       letter-spacing: 1px;
+       font-weight: bold;
+    }
+    .Contact_box p{
+        padding-bottom: 1rem;
+    }
+    .Contact-btn{
+        background-color: #33673f;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 1px;
+        border: none;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        cursor: pointer;
+    }
+    .Addres-Info{
+        width: 100%;
+        height: fit-content;
+        border: 2px solid rgba(0, 118, 16, 0.539);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 1rem;
+        
+    }
+    .addres_box{
+        width: 100%;
+        height: 100px;
+        /* padding: 0rem 0rem 1rem 1rem; */
+        /* border: 2px solid rgba(0, 118, 16, 0.539);  */
+    }
+    .addres_box p{ 
+        
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: underline;
+        padding-bottom: 0.4rem; 
+        text-align: left;
+        /* border: 2px solid rgba(0, 118, 16, 0.539); */
+        
+    }
+    i .fa-solid .fa-location-dot{
+       cursor: pointer;
+    }
+    .addres_box li{
+       list-style: none;
+       
+       
+    }
+}

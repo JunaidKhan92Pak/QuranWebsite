@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quran</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="Logo">Quran</div>
+            <div class="MenuBtn"><i class="fa-solid fa-bars fa-2x" ></i><i class="fa-solid fa-xmark fa-2x" style="display: none;"></i></div>
+            <div class="Menus">
+                <ul class="ul">
+                    <li class="li"><a class="links" href="index.html">Home</a></li>
+                    <li class="li"><a class="links" href="librayry.html">Library</a></li>
+                    <li class="li"><a class="links" href="about.html">About Us</a></li>
+                    <li class="li"><a class="links" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main-Div">
+        <div class="div-container">
+            <div class="Search-div">
+                <input type="text" placeholder="Search Here">
+                <button>Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- This Content is for all lib  -->
+    <div class="Surat-Main-Div">
+        <div class="LibMenu">
+            <ul>
+                <li><a href="#">Surah</a></li>
+                <li><a href="#">Humad</a></li>
+                <li><a href="#">Naats</a></li>
+            </ul>
+        </div>
+
+        <!-- This is for All Div That Contains Surah and Ayats -->
+        <div class="Surats">
+            <Audio class="Audio">
+                <source src="/audio/Aaar Al Hudhoudi - 067 Al-Mulk - Quran Central.mp3" type="audio/mpeg">
+            </Audio>
+            <div class="suratImg">
+                <img src="/media/surah.jpg" alt="alt">
+            </div>
+            <div class="suratTitel">
+                <h1>Surah Al-Mulk</h1>
+                <p>by Aaar Al Hudhoudi</p>
+            </div>
+            <div class="controls">
+                <div class="play-Control">
+                    <img src="/media/rewind_icon-Green.svg" alt="">
+                    <img src="/media/61555_back_left_icon.png" alt="" class="Play">
+                    <img src="/media/rewind_icon-Green.png" alt="">
+                </div>
+                <div class="audio_function">
+                    <div class="volume_img">
+                        <img src="/media/volume-icon.png" alt="" class="volumeIcon">
+                    </div>
+                    <div class="volume_control">
+                        <input type="range" max="100" min="0" value="90" class="Volumebar_1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Surats">
+            <div class="suratImg">
+                <img src="/media/Quran.jpg" alt="alt">
+            </div>
+            <div class="suratTitel">
+                <h1>Surah Al-Rehman</h1>
+                <p>by Qari Abdul Basit</p>
+            </div>
+            <div class="controls">
+                <div class="play-Control">
+                    <Audio class="Audioa2">
+                        <source src="/audio/abdul-basit-64-surah-055.mp3" type="audio/mpeg">
+                    </Audio>
+                    <img src="/media/rewind_icon-Green.svg" alt="">
+                    <img src="/media/61555_back_left_icon.png" alt="" class="Play p2">
+                    <img src="/media/rewind_icon-Green.png" alt="">
+                </div>
+                <div class="audio_function">
+                    <div class="volume_img">
+                        <img src="/media/volume-icon.png" alt=""  class="volumeIcon">
+                    </div>
+                    <div class="volume_control">
+                        <input type="range" max="100" min="0" value="90" class="Volumebar_2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Surats">
+            <Audio class="Audioa3">
+                <source src="/audio/Surah 019 Maryam - Quran Audio MP3 - Quran Central.mp3" type="audio/mpeg">
+            </Audio>
+            <div class="suratImg">
+                <img src="/media/bismillah-name-allah-arabic-art-koran-bismillah-name-allah-arabic-art-koran-holy-book-muslims-179227439.jpg" alt="alt">
+            </div>
+            <div class="suratTitel">
+                <h1>Surah Al-Maryam</h1>
+                <p>by Quran Central</p>
+            </div>
+            <div class="controls">
+                <div class="play-Control">
+                    
+                    <img src="/media/rewind_icon-Green.svg" alt="">
+                    <img src="/media/61555_back_left_icon.png" alt="" class="Play p3">
+                    <!-- <input type="range" > -->
+                    <img src="/media/rewind_icon-Green.png" alt="">
+                </div>
+                <div class="audio_function">
+                    <div class="volume_img">
+                        <img src="/media/volume-icon.png" alt="" class="volumeIcon">
+                    </div>
+                    <div class="volume_control">
+                        <input type="range" max="100" min="0" value="90" class="Volumebar_3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html> 
